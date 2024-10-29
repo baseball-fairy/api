@@ -8,7 +8,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: `../env/.${process.env.NODE_ENV}.env`,
+      envFilePath: `env/.${process.env.NODE_ENV}.env`,
       isGlobal: true,
       cache: true,
       validationSchema: Joi.object({
